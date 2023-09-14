@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+#app{
+    max-width: 1170px;
+    margin: 20px auto 0;
+    padding: 40px 50px;
+    border: 1px solid rgba(255, 207, 157, 1);
+    background-color: rgba(255, 207, 157, 0.1);
+}
+
+#app #user-input button {
+    background-color: #FFB000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    align-self: flex-end;
+    font-weight: 700;
+}
+
+#app #user-input button:hover{
+    color: #FFB000;
+    background-color: white;
+    outline: 1px solid #FFB000;
+}
+
+#app .form-control label{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#app #user-input .form-control{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+#app #user-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#app input, #app textarea {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px 13px;
+}
+
+#app input:focus, #app textarea:focus{
+    outline: none;
+}
+
+#app .projects li {
+    background-color: rgba(245, 245, 220, 0.3);
+    padding: 30px;
+    box-shadow: 0 0 6px rgb(187, 187, 157);
+    cursor: move;
+}
+
+.projects header {
+    width: 100%;
+    background-color: #FFB000;
+    padding: 10px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects{
+    margin-bottom: 40px;
+}
+
+.projects ul {
+    min-height: 200px;
+    background-color: rgba(255, 207, 157, 0.06);
+}
+
+.droppable{
+    background-color: rgba(255, 207, 157, 0.4) !important;
+}
